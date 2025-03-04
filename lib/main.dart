@@ -120,3 +120,29 @@ class _MyAppState extends State<MyApp> {
     ),
 
     SizedBox(height: 20),
+    // Rounded Login Button
+    Container(
+    width: double.maxFinite,
+    child: CupertinoButton(
+    color: CupertinoColors.systemBlue,
+    borderRadius: BorderRadius.circular(30),
+    child: Text(
+    'Log in',
+    style: TextStyle(color: CupertinoColors.white, fontWeight: FontWeight.bold),
+    ),
+    onPressed: () {
+    isLogin(_username.text, _password.text)
+    ? Navigator.push(context, CupertinoPageRoute(builder: (context) => Homepage()))
+        : setState(() {
+    _password.text = "";
+    error = "Incorrect username or password";
+    });
+    },
+
+    ),
+    ),
+    SizedBox(height: 20),
+    Text("Forgot password?",
+    style: TextStyle(color: CupertinoColors.white, fontWeight: FontWeight.bold),
+    ),
+    SizedBox(height: 20),
