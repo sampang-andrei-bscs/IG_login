@@ -64,4 +64,33 @@ class _MyAppState extends State<MyApp> {
     borderRadius: BorderRadius.circular(30),
     ),
     ),
+    SizedBox(height: 10),
 
+    // Rounded Password TextField
+    CupertinoTextField(
+    controller: _password,
+    placeholder: "Password",
+    padding: EdgeInsets.all(13),
+    obscureText: hidePassword,
+    decoration: BoxDecoration(
+    border: Border.all(color: CupertinoColors.systemFill),
+    color: CupertinoColors.systemGrey6,
+    borderRadius: BorderRadius.circular(30),
+    ),
+    suffix: CupertinoButton(
+    padding: EdgeInsets.zero,
+    child: Icon(
+    hidePassword ? CupertinoIcons.eye : CupertinoIcons.eye_slash,
+    size: 20,
+    color: CupertinoColors.systemGrey,
+    ),
+    onPressed: () {
+    setState(() {
+    hidePassword = !hidePassword;
+    });
+    },
+
+    ),
+    ),
+
+    SizedBox(height: 20),
