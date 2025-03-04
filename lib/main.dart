@@ -16,20 +16,12 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  TextEditingController _username = TextEditingController();
-  TextEditingController _password = TextEditingController();
-  bool hidePassword = false;
-  String error = "";
-
-  bool isLogin(String username, String password) {
-    if (username == "admin" && password == "123") {
-      setState(() {
-        _username.text = "";
-        _password.text = "";
-        error = "";
-      });
-      return true;
-    } else {
-      return false;
-    }
+  @override
+  Widget build(BuildContext context) {
+    return const CupertinoPageScaffold(child: SafeArea(child: Column(
+      children: [
+        Text('Test')
+      ],
+    )));
   }
+}
