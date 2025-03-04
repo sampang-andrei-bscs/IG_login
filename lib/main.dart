@@ -33,5 +33,23 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoPageScaffold(
+        child: Padding(
+        padding: const EdgeInsets.all(20.0),
+    child: SafeArea(
+    child: Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+    SizedBox(height: 50),
+
+    // Logo Image
+    Image.asset(
+    "assets/img/iglogo.png", // Ensure this image exists in your assets folder
+    width: 120,
+    height: 120,
+    fit: BoxFit.contain,
+    ),
 
 
