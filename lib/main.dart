@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:ig/Homepage.dart';
 
-void main(){
+void main() {
   runApp(CupertinoApp(
     theme: CupertinoThemeData(brightness: Brightness.dark),
     debugShowCheckedModeBanner: false,
@@ -13,15 +14,4 @@ class MyApp extends StatefulWidget {
 
   @override
   State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
-  Widget build(BuildContext context) {
-    return const CupertinoPageScaffold(child: SafeArea(child: Column(
-      children: [
-        Text('Test')
-      ],
-    )));
-  }
 }
