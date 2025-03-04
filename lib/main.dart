@@ -57,7 +57,7 @@ class _MyAppState extends State<MyApp> {
     width: double.maxFinite,
     child: CupertinoButton(
     color: CupertinoColors.systemBlue,
-    borderRadius: BorderRadius.circular(30),
+    borderRadius: BorderRadius.circular(28),
     child: Text(
     'Log in',
     style: TextStyle(color: CupertinoColors.white, fontWeight: FontWeight.bold),
