@@ -88,7 +88,7 @@ class _MyAppState extends State<MyApp> {
     decoration: BoxDecoration(
     border: Border.all(color: CupertinoColors.secondarySystemFill),
     color: CupertinoColors.systemGrey6,
-    borderRadius: BorderRadius.circular(30),
+    borderRadius: BorderRadius.circular(28),
     ),
     ),
     SizedBox(height: 10),
