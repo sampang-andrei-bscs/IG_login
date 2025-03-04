@@ -53,3 +53,15 @@ class _MyAppState extends State<MyApp> {
     ),
 
 
+    // Rounded Username TextField
+    CupertinoTextField(
+    controller: _username,
+    placeholder: "Username, email or mobile number",
+    padding: EdgeInsets.all(13),
+    decoration: BoxDecoration(
+    border: Border.all(color: CupertinoColors.secondarySystemFill),
+    color: CupertinoColors.systemGrey6,
+    borderRadius: BorderRadius.circular(30),
+    ),
+    ),
+
