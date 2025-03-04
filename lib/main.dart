@@ -146,3 +146,41 @@ class _MyAppState extends State<MyApp> {
     style: TextStyle(color: CupertinoColors.white, fontWeight: FontWeight.bold),
     ),
     SizedBox(height: 20),
+
+      // Error Message
+      Text(
+        "$error",
+        style: TextStyle(color: CupertinoColors.destructiveRed),
+      ),
+
+      Spacer(), // Pushes the "Create New Account" button to the bottom
+
+      // Create New Account Button (Border Only)
+      Container(
+        width: double.maxFinite,
+        decoration: BoxDecoration(
+          border: Border.all(color: CupertinoColors.systemBlue, width: 2),
+          borderRadius: BorderRadius.circular(30),
+        ),
+        child: CupertinoButton(
+          padding: EdgeInsets.symmetric(vertical: 12), // Adjust padding
+          child: Text(
+            "Create New Account",
+            style: TextStyle(color: CupertinoColors.systemBlue, fontWeight: FontWeight.bold), // Green text
+          ),
+          onPressed: () {
+            // Navigate to Sign-Up Page
+          },
+          color: CupertinoColors.transparent, // No background color
+        ),
+      ),
+
+      SizedBox(height: 30),
+      Text('Meta',style: TextStyle(color: CupertinoColors.systemGrey,fontWeight: FontWeight.bold),),
+    ],
+    ),
+    ),
+        ),
+    );
+  }
+}
